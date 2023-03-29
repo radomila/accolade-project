@@ -1,0 +1,261 @@
+body {
+  background-color: #edf4f7;
+}
+
+@font-face {
+  font-family: "Trump Gothic Pro";
+  src: url("/fonts/TrumpGothicPro-Bold.otf");
+}
+
+@font-face {
+  font-family: "Gotham CE Normal";
+  src: url("/fonts/Gotham-CE_Normal.otf");
+}
+
+@font-face {
+  font-family: "Gotham CE Bold";
+  src: url("/fonts/Gotham-CE_Bold.otf");
+}
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("/fonts/Gotham_OpenType_Bold.otf");
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  padding-right: 8.6px;
+  margin-left: 64px;
+}
+
+.logo h2 {
+  font-family: "Gotham CE Bold";
+  text-transform: none;
+}
+.navigation {
+  display: flex;
+  gap: 40px;
+  height: 26px;
+  top: calc(50% - 26px / 2);
+  left: 0%;
+  right: 37.14px;
+  font-family: "Gotham CE Bold";
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.navigation li {
+  list-style-type: none;
+}
+
+.navigation li img {
+  padding-left: 7px;
+}
+
+/* Introduction */
+.main-content {
+  display: flex;
+  align-items: center;
+  left: 0;
+}
+
+.main-content {
+  position: absolute;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  width: 944px;
+  height: 696px;
+  left: 0px;
+  margin-top: 200px;
+}
+
+.introduction-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction-text {
+  width: 467px;
+  height: 148px;
+  margin-top: 119px;
+  padding-left: 259px;
+  font-family: "Trump Gothic Pro";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 134%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.nadpis {
+  display: flex;
+}
+
+.introduction-text img {
+  padding-left: 15px;
+}
+
+.introduction-paragraph {
+  font-family: "Gotham CE Normal";
+  position: absolute;
+  width: 446px;
+  height: 148px;
+  top: 499px;
+  left: 259px;
+}
+
+.introduction-button {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  left: 259px;
+  top: 731px;
+}
+
+.introduction-button p {
+  left: 15.99%;
+  right: 78.65%;
+  font-family: "Gotham Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-left: 16px;
+}
+
+.picture {
+  position: absolute;
+  left: 845px;
+  top: 267px;
+}
+
+/*Cards*/
+.cards {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.card-section img {
+  cursor: pointer;
+  padding-top: 40px;
+  padding-left: 60px;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 60px;
+}
+.number {
+  font-family: "Trump Gothic Pro";
+  font-size: 56px;
+  color: #afc5cf;
+}
+
+.title {
+  width: 445px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding-left: 30px;
+  font-family: "Trump Gothic Pro";
+  font-size: 48px;
+}
+
+.card-description p {
+  width: 553px;
+  height: 64px;
+  padding-left: 60px;
+  font-style: normal;
+  font-weight: 325;
+  font-size: 15px;
+  line-height: 153%;
+  letter-spacing: 1px;
+  font-family: "Gotham CE Normal";
+}
+
+.left {
+  background-color: #ffffff;
+  position: absolute;
+  width: 679px;
+  height: 377px;
+  left: 259px;
+  top: 1024px;
+}
+
+.right {
+  background-color: #ffffff;
+  position: absolute;
+  width: 679px;
+  height: 377px;
+  left: 981px;
+  top: 1024px;
+}
+
+.left-2 {
+  background-color: #ffffff;
+  position: absolute;
+  width: 679px;
+  height: 377px;
+  left: 259px;
+  top: 1433px;
+}
+
+.right-2 {
+  background-color: #ffffff;
+  position: absolute;
+  width: 679px;
+  height: 377px;
+  left: 981px;
+  top: 1433px;
+}
+
+.left-3 {
+  background-color: #ffffff;
+  position: absolute;
+  width: 679px;
+  height: 377px;
+  left: 259px;
+  top: 1842px;
+}
+
+.right-3 {
+  background-color: #ffffff;
+  position: absolute;
+  width: 679px;
+  height: 377px;
+  left: 981px;
+  top: 1842px;
+}

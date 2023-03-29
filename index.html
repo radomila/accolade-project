@@ -8,7 +8,172 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <script src="myscripts.js"></script> 
-    
+    <script>
+      const onShowContent = () => {
+        let element = document.getElementById("cards");
+        element.style.display === "none"
+          ? (element.style.display = "block")
+          : (element.style.display = "none");
+      };
+
+      const onShowPopup = () => {};
+    </script>
+    <!--Header-->
+    <div class="header">
+      <div class="logo">
+        <img src="icons/logo.svg" alt="Logo" />
+        <h2>Accolade</h2>
+      </div>
+      <ul class="navigation">
+        <li>
+          o nás
+          <img src="/icons/arrow-down.svg" alt="Arrow down" />
+        </li>
+        <li>
+          investujte s námi
+          <img src="/icons/arrow-down.svg" alt="Arrow down" />
+        </li>
+        <li>naše parky</li>
+        <li>připravované lokality</li>
+        <li>aktuality</li>
+        <li>kontakty</li>
+        <li>
+          cz
+          <img src="/icons/arrow-down.svg" alt="Arrow down" />
+        </li>
+      </ul>
+    </div>
+    <!--Main content-->
+    <div class="main-content">
+      <div class="introduction">
+        <div class="introduction-header">
+          <div class="nadpis">
+            <p class="introduction-text">
+              Zielistka Green Orange- pielęgnacja
+              <img src="icons/detail.svg" alt="Logo" width="47" height="49" />
+            </p>
+          </div>
+          <p class="introduction-paragraph">
+            Zieliska Green Orange to wyjtkowa roślina, której kolorowe
+            ubarwienie ożywi pomieszczenie, w którym się znajduję. Kolejną
+            zaletą zielistki jest to, że skutecznie oczyszcza powietrze ze
+            szkodliwych substancji,dzięki czemu lepiej się czujemy w jej
+            towarzystwie. Potrafi oczyszczać powietrze z substancji takich jak
+            formaldehyd, ksylen, tlenek węgla, aceton, amoniak i metale ciężkie.
+          </p>
+        </div>
+        <div class="introduction-button">
+          <button onclick="onShowContent()">
+            <img
+              src="icons/popup-button.svg"
+              alt="Button icon"
+              width="32px"
+              height="32px"
+            />
+          </button>
+          <p>jak to zrobić</p>
+        </div>
+      </div>
+      <div class="picture">
+        <img src="pictures/plant.svg" alt="Main picture" />
+      </div>
+    </div>
+    <!--Cards-->
+    <div id="cards" class="cards-section">
+      <div class="cards">
+        <div class="card-section left">
+          <div class="card-title">
+            <p class="number">1</p>
+            <p class="title">Na dobry początek</p>
+          </div>
+          <div class="card-description">
+            <p>
+              Dostarczona roślina została posadzona w świeżej ziemi. Zaleca się
+              niepodlewanie rośliny przez najbliższy tydzień- licząc od dnia
+              dostawy.
+            </p>
+          </div>
+        </div>
+        <div class="card-section right">
+          <div class="card-title">
+            <p class="number">2</p>
+            <p class="title">Adaptacja</p>
+          </div>
+          <div class="card-description">
+            <p>
+              Adaptacja kwiatów wymaga czasu. Może ona trwać do ok. 6 tygodni
+              liczą od dnia ustawienia kwiatów w danym pomieszczeniu. Mogą
+              zżółknąć końcówki liści lub cała łodyga. Należy usunąć obumarłą
+              część rośliny, usunięcie zmobilizuje je do wypuszczenia nowych.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-section left-2">
+          <div class="card-title">
+            <p class="number">3</p>
+            <p class="title">Stanowisko</p>
+          </div>
+          <div class="card-description">
+            <p>
+              Jasne z dużą ilością rozproszonego słońca. Należy unikać mocnego
+              palącego słońca. Nie lubi temperatur niższych niż 18°C. Najlepiej
+              zapewnić jej temperaturę między 20-25°C.
+            </p>
+          </div>
+        </div>
+        <div class="card-section right-2">
+          <div class="card-title">
+            <p class="number">4</p>
+            <p class="title">Podlewanie</p>
+          </div>
+          <div class="card-description">
+            <p>
+              Wodę wlewamy naokoło donicy, najlepiej nie bezpośrednio do
+              rośliny. Donica o średnicy 21cm - podlewamy raz na tydzień 0,5-0,7
+              szklanki wody.Każdorazowo przed podlaniem proszę sprawdzać
+              wilgotność ziemi i na podstawie tej informacji zadecydować czy
+              podlać kwiatka mniej czy bardziej.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-section left-3">
+          <div class="card-title">
+            <p class="number">5</p>
+            <p class="title">Ziemia nie może być mokra w dotyku</p>
+          </div>
+          <div class="card-description">
+            <p>
+              Wierzchnia warstwa ziemi może być sucha np. od klimatyzacji, co
+              nie oznacza, że korzenie też mają sucho (metoda domową: można to
+              sprawdzić wkładając palce do doniczki – sprawdzamy wówczas czy
+              głębiej w doniczce też jest sucho).
+            </p>
+          </div>
+          <img src="icons/image.png" alt="Image popup" />
+        </div>
+        <div class="card-section right-3">
+          <div class="card-title">
+            <p class="number">6</p>
+            <p class="title">Ziemia też nie może być za sucha</p>
+          </div>
+          <div class="card-description">
+            <p>
+              Ziemia też nie może być za sucha, gdy ziemia odchodzi od donicy to
+              oznacza, że kwiat jest przesuszony. Wówczas, aby nawodnić roślinę
+              dolewamy wodę stopniowo i powoli. Dobrze też jest wzruszyć
+              wierzchnią warstwę ziemi, tak aby była spulchniona, wówczas
+              roślina lepiej wchłania wodę.
+            </p>
+          </div>
+          <button onclick="onShowPopup()">
+            <img src="icons/image.png" alt="Image popup" />
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
